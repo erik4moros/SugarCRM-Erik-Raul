@@ -1,0 +1,204 @@
+
+body {
+  background: #f8f9fb;
+  color: #222;
+  margin: 0;
+}
+
+ 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  z-index: 9999; 
+}
+
+header img { height: 40px; }
+.llista {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.llista a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+#demostracio {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.boton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.reserva {
+  background-color: #ff7a00;
+  color: black;
+  border: none;
+  font-weight: 600;
+  padding: 10px 22px;
+  margin: 0 60px 0 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.reserva:hover { 
+  background-color:black;
+  color: white;
+}
+@media (max-width: 600px) {
+  #contenido {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  #info {
+    text-align: center;
+  }
+
+  form .row{
+    flex-direction: column;
+  }
+
+  header {
+    height: auto;
+    padding: 20px;
+  }
+
+  .llista, .reserva{
+    display: none;
+  }
+
+  #banner {
+    padding: 60px 10px;
+  }
+
+  #banner h2 {
+    font-size: 28px;
+  }
+
+  #banner p {
+    font-size: 16px;
+  }
+  header img { height: 20px; }
+  .boton{
+    margin-right: 60px;
+  }
+}
+
+
+#main-content {
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#main-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Grid de planes */
+.planes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.plan {
+  background: #fff;
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.plan-nombre {
+  font-size: 1.5rem;
+  color: #111;
+}
+
+.plan-precio {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.precio-usuario {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.plan-descripcion {
+  margin: 1rem 0;
+  color: #444;
+}
+
+.plan-incluye {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1.5rem;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.features li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Plan destacado */
+.popular {
+  border: 2px solid #5e2366;
+}
+
+.badge {
+  background: #5e2366;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 0rem;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  width: 100%;;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: #f2f2f2;
+    font-size: 14px;
+     color: #6c757d;
+}
+
+.footer a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: #6c757d;
+}

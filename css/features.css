@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  z-index: 9999; 
+}
+
+.btn{
+  height: 92px;
+}
+
+.llista {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.llista a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+#demostracio {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.boton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.reserva {
+  background-color: #ff7a00;
+  color: black;
+  border: none;
+  font-weight: 600;
+  padding: 10px 22px;
+  margin: 0 60px 0 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.reserva:hover { 
+  background-color:black;
+  color: white;
+}
+.caracteristiques {
+  display: flex;          /* activa flexbox */
+  flex-wrap: wrap;        /* permite que las cajas bajen a la siguiente línea */
+  justify-content: center; /* centra las filas horizontalmente */
+  gap: 20px;              /* espacio entre cajas */
+  padding: 20px;
+}
+
+.caixes {
+  flex: 0 1 calc(33.333% - 40px); /* 3 cajas por fila con espacio entre ellas */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;         /* para que el padding no rompa el ancho */
+}
+
+.imatge{
+  margin-bottom: 1.25rem;
+}
+
+h3{
+  color: #101820;
+  font-size: 28px;
+  line-height: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.portada{
+  background-image: url(../img/header-background.jpg);
+  position: relative;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  color: white;
+  align-items: center;
+  margin-top: 5em;
+}
+h2{
+  text-align: left;
+  padding: 3em;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.footer{
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+  color:black;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "intro primer segon tercer"
+    "socials primer2 segon2 tercer2";
+  gap: 20px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.logoSugar{
+  height: 30vh;
+  width: 20vh;
+}
+.botonsito{
+  background-color: rgb(0, 112, 146);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: #f2f2f2;
+    font-size: 14px;
+     color: #6c757d;
+}
+
+.footer a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: #6c757d;
+}
+
+@media (max-width: 600px) {
+  form .row{
+    flex-direction: column;
+  }
+
+  header {
+    height: auto;
+    padding: 20px;
+  }
+
+  .llista, .reserva{
+    display: none;
+  }
+
+  #banner {
+    padding: 60px 10px;
+  }
+
+  #banner h2 {
+    font-size: 28px;
+  }
+
+  #banner p {
+    font-size: 16px;
+  }
+  header img { height: 20px; }
+  .boton{
+    margin-right: 60px;
+  }
+
+  .portada{
+    height: 50vh;
+  }
+  
+}

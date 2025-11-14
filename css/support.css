@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: #222;
+}
+
+/* ----- HEADER ----- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  z-index: 9999; 
+}
+
+header img { height: 40px; }
+
+.llista {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.llista a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+#demostracio {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.boton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.reserva {
+  background-color: #ff7a00;
+  color: black;
+  border: none;
+  font-weight: 600;
+  padding: 10px 22px;
+  margin: 0 60px 0 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.reserva:hover { 
+  background-color:black;
+  color: white;
+}
+main{
+  margin-top: 50px;
+}
+
+/* ----- BANNER HORIZONTAL ----- */
+#banner {
+  background-color: #e35205;
+  background-image: url('../img/header-pattern-orange.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#banner h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+#banner p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+/* ----- CONTENIDO PRINCIPAL ----- */
+#contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 80px;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#info p { margin: 8px 0; }
+
+#info .azul {
+  color: #0089d0;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+/* ----- FORMULARIO ----- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+form .row {
+  display: flex;
+  gap: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #0089d0;
+  box-shadow: 0 0 0 1px #0089d0;
+}
+
+.contador {
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+}
+
+.checkbox {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.checkbox a, .legal a {
+  color: #0089d0;
+  text-decoration: none;
+}
+
+.checkbox a:hover, .legal a:hover {
+  text-decoration: underline;
+}
+
+.legal {
+  font-size: 14px;
+  margin: 0;
+}
+
+.entregar {
+  background-color: #ff7a00;
+  color: white;
+  font-weight: 700;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.entregar:hover {
+  background-color: #e96c00;
+}
+
+/* ----- RESPONSIVE SOLO HASTA 600PX ----- */
+@media (max-width: 600px) {
+  #contenido {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  #info {
+    text-align: center;
+  }
+
+  form .row{
+    flex-direction: column;
+  }
+
+  header {
+    height: auto;
+    padding: 20px;
+  }
+
+  .llista, .reserva{
+    display: none;
+  }
+
+  #banner {
+    padding: 60px 10px;
+  }
+
+  #banner h2 {
+    font-size: 28px;
+  }
+
+  #banner p {
+    font-size: 16px;
+  }
+  header img { height: 20px; }
+  .boton{
+    margin-right: 60px;
+  }
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: #f2f2f2;
+    font-size: 14px;
+     color: #6c757d;
+}
+
+.footer a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: #6c757d;
+}
